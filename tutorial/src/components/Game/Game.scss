@@ -1,0 +1,14 @@
+@use "../../styles/base.scss";
+
+.gameContainer {
+  @extend .col;
+
+  height: 50vw;
+  width: 50vw;
+  background: #eeffffaa;
+
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 8px 8px 32px 4px rgba(0, 0, 0, 0.5);
+}

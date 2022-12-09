@@ -1,0 +1,40 @@
+@use "../../styles/base.scss";
+
+.square {
+  @extend .col;
+  flex: 1;
+  height: 100%;
+}
+
+.blackSquare {
+  @extend .square;
+  background: #222222;
+}
+
+.whiteSquare {
+  @extend .square;
+  background: #dddddd;
+}
+
+.checker {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.blackPawn {
+  @extend .checker;
+  background: #111111;
+}
+.blackKing {
+  @extend .blackPawn;
+  border: 1px solid #ee00ee;
+}
+.whitePawn {
+  @extend .checker;
+  background: #eeeeee;
+}
+.whiteKing {
+  @extend .whitePawn;
+  border: 1px solid #00ee00;
+}
